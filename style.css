@@ -276,6 +276,7 @@ body::-webkit-scrollbar-thumb{
 .mail,.phone,.location{
     margin-top: 1vh;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     gap:10px;
@@ -283,6 +284,7 @@ body::-webkit-scrollbar-thumb{
 
 .icons,.icons h2{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 #contact img{
@@ -299,6 +301,7 @@ body::-webkit-scrollbar-thumb{
 .madeby{
     padding:1vh;
     display: flex;
+    flex-wrap: wrap;
     gap:8px;
     align-items: center;
     justify-content: center;
