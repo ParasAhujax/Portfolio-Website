@@ -14,19 +14,32 @@
     <title>Portfolio</title>
 </head>
 <body>
+    <script>
+        function navigateTo(id) {
+            var element = document.getElementById(id);
+            if (element) {
+                var navbarHeight = document.querySelector('.nav').offsetHeight; 
+                var offsetTop = element.offsetTop - navbarHeight;
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        }
+        </script>
     <div id="main">
-        <div id="main-hero">
-            <div class="nav">
-                <h2 class="logo">PA</h2>
-                <div class="nav-bar">
-                    <ul>
-                        <li class="home"><a href="">Home</a></li>
-                        <li class="skills"><a href="">Skills</a></li>
-                        <li class="projects"><a href="">Projects</a></li>
-                        <li class="contact"><a href="">Contact</a></li>
-                    </ul>
-                </div>
+        <div class="nav">
+            <h2 class="logo">PA</h2>
+            <div class="nav-bar">
+                <ul>
+                    <li class="home"><a href="#" onclick="navigateTo('home'); return false;">Home</a></li>
+                    <li class="skills"><a href="#" onclick="navigateTo('skills-page'); return false;">Skills</a></li>
+                    <li class="projects"><a href="#" onclick="navigateTo('projects-page'); return false;">Projects</a></li>
+                    <li class="contact"><a href="#" onclick="navigateTo('contact-page'); return false;">Contact</a></li>
+                </ul>
             </div>
+        </div>
+        <div id="home">
             <div class="heading">
                 <h1 class="main-heading">Software</h1>
                 <div class="block-heading">
@@ -47,7 +60,7 @@
             </div>      
         </div>  
 
-        <div id="new-hero1">
+        <div id="skills-page">
             <!-- <h2 class="logo">PA</h2> -->
 
             <div class="heading-skills">
@@ -97,7 +110,7 @@
             </div>
         </div>
 
-        <div id="new-hero2">
+        <div id="projects-page">
             <!-- <h2 class="logo">PA</h2> -->
 
             <div class="heading-project">
@@ -110,23 +123,57 @@
 
                     <div class="news-app-img">
                         <img  src="./public/news-app-img.png" alt="news app">
-                        <img  src="./public/news-app-img1.png" alt="">
+                        <!-- <img  src="./public/news-app-img1.png" alt=""> -->
                     </div>
 
-                    <a href="https://github.com/ParasAhujax/News-App" target="_blank">
-                    <div class="project-see-more">
-                        <div class="see-more">See More</div>
+                    <a class="news-app-link" href="https://github.com/ParasAhujax/News-App" target="_blank">
+                    <div class="news-app-link">
+                        <h3>See More</h3>
                     </div>
                     </a>
                 </div>
                 
-                <!-- <div class="vertical-divider"> </div> -->
+                <div class="backend-projects">
+                    <div class="jwt-auth">
+                        <div class="jwt-auth-heading">
+                            <h2>Jwt Authentication</h2>
+                            <h3>Backend APIs</h3>
+                        </div>
+                        <a class="jwt-auth-link" href="https://github.com/ParasAhujax/Jwt-Authentication" target="_blank">
+                            <div class="jwt-auth-link">
+                                <h3 class="jwt-auth-link">See More</h3>
+                            </div>    
+                        </a>
+                    </div>
+                    <div class="cookie-auth">
+                        <div class="cookie-auth-heading">
+                            <h2>Cookie Authentication</h2>
+                            <h3>Backend APIs</h3>
+                        </div>
+                        <a class="cookie-auth-link" href="https://github.com/ParasAhujax/Cookie-Authentication" target="_blank">
+                            <div class="cookie-auth-link">
+                                <h3 class="cookie-auth-link">See More</h3>
+                            </div>    
+                        </a>
+                    </div>
+                    <div class="url-short">
+                        <div class="url-short-heading">
+                            <h2>Url Shortener</h2>
+                            <h3>Backend APIs</h3>
+                        </div>
+                        <a class="url-short-link" href="https://github.com/ParasAhujax/Cookie-Authentication" target="_blank">
+                            <div class="url-short-link">
+                                <h3 class="url-short-link">See More</h3>
+                            </div>    
+                        </a>
+                    </div>
+                </div>
+                
 
-                <div class="Jwt Authenticator project-card">
+                <!-- <div class="Jwt Authenticator project-card">
                     <h2>Jwt Authentication</h2>
 
                     <div class="jwt-auth-img">
-                        <img  src="./public/jwt-auth.png" alt="jwt app">
                         <img  src="./public/jwt-auth.png" alt="jwt app">
                         
                     </div>
@@ -136,11 +183,11 @@
                             <div class="see-more">See More</div>
                         </div>    
                     </a>
-                </div>
+                </div> -->
             </div>
         </div>
 
-        <div id="new-hero3">
+        <div id="contact-page">
             <!-- <h2 class="logo">PA</h2> -->
 
             <div id="contact">
