@@ -255,7 +255,7 @@ body::-webkit-scrollbar-thumb{
     border-radius: 35px;
     transition:ease-in-out 0.25s;
 }
-.news-app-link h3:hover, .jwt-auth-link h3:hover{
+.news-app-link h3:hover, .jwt-auth-link h3:hover,.cookie-auth-link h3:hover,.url-short-link h3:hover{
     border-radius: 10px;
 }
 .news-app-img img{
